@@ -51,7 +51,7 @@ Ich möchte den Befehl kurz zerlegen und erklären:
 * __exiftool__ ist der Aufruf des Programmes, danach folgenden diverse Parameter: 
 * __-v__ erzeugt eine Ausgabe mit mehr Informationen als üblich 
 * __-r__ bedeutet, dass gefundene Ordner rekursiv nach Dateien durchsucht werden 
-* __-d ./%Y/%Y-%m/%Y-%m-%d/%Y%m%d_%H%M%S%%+2c.%%e__ spezifiziert wie die gewünschte Ordnerstruktur und Dateibenennung ist. Dabei steht
+* -d ./%Y/%Y-%m/%Y-%m-%d/%Y%m%d_%H%M%S%%+2c.%%e spezifiziert wie die gewünschte Ordnerstruktur und Dateibenennung ist. Dabei steht
   * __.__ für das aktuelle Verzeichnis 
   * __%Y__ für Jahr, 
   * __%m__ für Monat, 
