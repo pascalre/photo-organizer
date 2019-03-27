@@ -37,7 +37,8 @@ Die beste Lösung ist meines Erachtens den Aufnahmezeitpunkt in den Dateinamen z
 Was ist nun wenn der eigentliche Zeitstempel eines Bildes verloren geglaubt scheint? Nahezu alle modernen Kameras speichern Metadaten eines JPEG-Bildes in der Bilddatei selbst ab. Diese Metadaten sind vom Format Exif und können z. B. folgendes beinhalten:
 * Kameramodell mit dem das Foto aufgenommen wurde 
 * geografische Koordinaten 
-* Aufnahmezeitpunkt 
+* Aufnahmezeitpunkt
+
 # ExifTool: Dein bester Freund
 Ich habe das Anlegen der Ordnerstruktur für neue Bilder lange Zeit händisch gemacht. Da das sehr aufwändig ist, habe mich nach einer automatisierten Möglichkeit umgesehen. Dabei bin ich schnell über die beiden Tools __exiv2__ und __ExifTool__ gestolpert. Diese Kommandozeilenwerkzeuge können Metadaten auslesen und anhand dieser Informationen Dateien ordnen und umbenennen. Da der Funktionsumfang von ExifTool deutlich größer ist - und vor allem weil es auch Metadaten aus Videos auslesen kann - habe ich mich dazu entschieden meine Bilder mit Hilfe dieses Tools zu ordnen.
 
