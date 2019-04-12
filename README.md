@@ -64,7 +64,38 @@ Ich möchte den Befehl kurz zerlegen und erklären:
   * __%e__ ist die Dateiendung der Originaldatei. 
  
 * Mit __-FileName&lt;CreateDate__ wird angegeben, dass die Informationen zu Tag, Monat, Jahr aus dem Metadaten-Feld CreateDate genommen werden. 
-* __*__ bedeutet, dass alle Dateien in dem aktuellen Verzeichnis prozessiert werden sollen. 
+* __*__ bedeutet, dass alle Dateien in dem aktuellen Verzeichnis prozessiert werden sollen.
+
+# Ausgabe des Befehls
+Angenommen im Ausgangsordner liegt eine Reihe an unsortierten Bildern:
+```
+IMG_8850.JPG   IMG_8856.JPG   IMG_8859.JPG   IMG_8862.JPG   IMG_8890.JPG   IMG_8927.JPG   IMG_8931.AAE   IMG_8933.JPG   IMG_8938.JPG   IMG_8940.JPG   IMG_8942.JPG   IMG_9023.JPG   IMG_E8931.JPG
+IMG_8853.JPG   IMG_8858.JPG   IMG_8861.JPG   IMG_8868.JPG   IMG_8891.JPG   IMG_8928.JPG   IMG_8931.JPG   IMG_8937.JPG   IMG_8939.JPG   IMG_8941.JPG   IMG_9018.JPG   IMG_9024.JPG
+```
+
+Nach Ausführung des Befehls sind die Bilder nach Jahr, Monat, Tag sortiert:
+```
+./2017:
+12/
+
+./2017/12:
+17-12-04/ 17-12-05/ 17-12-07/ 17-12-10/
+
+./2017/12/17-12-04:
+20171204_225809.JPG  20171204_225814.JPG  20171204_234802.JPG
+
+./2017/12/17-12-05:
+20171205_011440.JPG  20171205_011443.JPG  20171205_011451.JPG  20171205_011456.JPG
+
+./2017/12/17-12-07:
+20171207_072143.JPG
+
+./2017/12/17-12-10:
+20171210_013357.JPG     20171210_013515.JPG     20171210_125503.JPG     20171210_130349.JPG     20171210_130351.JPG
+20171210_013452.JPG     20171210_013515_01.JPG  20171210_125814.JPG     20171210_130350.JPG
+```
+
+# Weitere Infos
 Dieses Vorgehen funktioniert nicht bei Bildern bei denen die Metadaten entfernt wurden (z. B. durch sog. Metadaten-Stripping). Beispielsweise werden beim Versenden von Bildern über WhatsApp die Metadatendaten entfernt.
 
 Weiterhin kann das Tool natürlich nicht wissen, welches Ereignis an einem Tag stattgefunden hat. Die Ereignisbeschreibung muss also zusätzlich noch manuell angegeben werden.
